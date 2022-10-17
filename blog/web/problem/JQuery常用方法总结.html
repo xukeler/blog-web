@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JQuery常用方法总结 | xukeler的博客</title>
+    <meta name="generator" content="VuePress 1.5.3">
+    <link rel="icon" href="/favicon.ico">
+    <script src="https://readmore.openwrite.cn/js/readmore.js" type="text/javascript"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+    <meta name="description" content="这是一个关于技术分享的博客">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;">
+    <link rel="preload" href="/assets/css/0.styles.d4ec1362.css" as="style"><link rel="preload" href="/assets/js/app.a2596c5f.js" as="script"><link rel="preload" href="/assets/js/3.0979b334.js" as="script"><link rel="preload" href="/assets/js/111.cef1e5a3.js" as="script"><link rel="prefetch" href="/assets/js/10.4fd94fab.js"><link rel="prefetch" href="/assets/js/100.47fc6062.js"><link rel="prefetch" href="/assets/js/101.9df6a6c5.js"><link rel="prefetch" href="/assets/js/102.02f47b2d.js"><link rel="prefetch" href="/assets/js/103.700e8b89.js"><link rel="prefetch" href="/assets/js/104.3f7c17d8.js"><link rel="prefetch" href="/assets/js/105.d6229b5e.js"><link rel="prefetch" href="/assets/js/106.c7228e4c.js"><link rel="prefetch" href="/assets/js/107.8be3bbd1.js"><link rel="prefetch" href="/assets/js/108.19d71441.js"><link rel="prefetch" href="/assets/js/109.0e796352.js"><link rel="prefetch" href="/assets/js/11.806c1fe7.js"><link rel="prefetch" href="/assets/js/110.e674647a.js"><link rel="prefetch" href="/assets/js/112.e88dc6d9.js"><link rel="prefetch" href="/assets/js/113.93a7dc55.js"><link rel="prefetch" href="/assets/js/114.66bd62ca.js"><link rel="prefetch" href="/assets/js/115.fb628228.js"><link rel="prefetch" href="/assets/js/116.72dcb7ab.js"><link rel="prefetch" href="/assets/js/117.ac3b8dd9.js"><link rel="prefetch" href="/assets/js/118.8ac0a1c4.js"><link rel="prefetch" href="/assets/js/119.57d371ac.js"><link rel="prefetch" href="/assets/js/12.d92cc1b1.js"><link rel="prefetch" href="/assets/js/120.43cec3cd.js"><link rel="prefetch" href="/assets/js/121.db7d6b8a.js"><link rel="prefetch" href="/assets/js/122.ee5158ab.js"><link rel="prefetch" href="/assets/js/123.bdd32de9.js"><link rel="prefetch" href="/assets/js/124.1335c362.js"><link rel="prefetch" href="/assets/js/125.ae69bccc.js"><link rel="prefetch" href="/assets/js/126.581e3d8c.js"><link rel="prefetch" href="/assets/js/127.02f7015c.js"><link rel="prefetch" href="/assets/js/128.534aecb0.js"><link rel="prefetch" href="/assets/js/129.f5af4e51.js"><link rel="prefetch" href="/assets/js/13.b6da7409.js"><link rel="prefetch" href="/assets/js/130.d3cc6e5a.js"><link rel="prefetch" href="/assets/js/131.b18ddfea.js"><link rel="prefetch" href="/assets/js/132.4a2bb581.js"><link rel="prefetch" href="/assets/js/133.026192bb.js"><link rel="prefetch" href="/assets/js/134.aab38f7c.js"><link rel="prefetch" href="/assets/js/135.c4216dcf.js"><link rel="prefetch" href="/assets/js/136.8d719167.js"><link rel="prefetch" href="/assets/js/137.e9023c48.js"><link rel="prefetch" href="/assets/js/138.0c738d77.js"><link rel="prefetch" href="/assets/js/139.375cf9c6.js"><link rel="prefetch" href="/assets/js/14.ceca7295.js"><link rel="prefetch" href="/assets/js/140.461a4981.js"><link rel="prefetch" href="/assets/js/141.5e1f7138.js"><link rel="prefetch" href="/assets/js/142.b337b654.js"><link rel="prefetch" href="/assets/js/143.6ae05237.js"><link rel="prefetch" href="/assets/js/144.918eb304.js"><link rel="prefetch" href="/assets/js/145.8abe0c57.js"><link rel="prefetch" href="/assets/js/146.56963792.js"><link rel="prefetch" href="/assets/js/147.9c5eb165.js"><link rel="prefetch" href="/assets/js/148.92d67c49.js"><link rel="prefetch" href="/assets/js/149.504e787c.js"><link rel="prefetch" href="/assets/js/15.1a9a4d74.js"><link rel="prefetch" href="/assets/js/150.fa93e3f0.js"><link rel="prefetch" href="/assets/js/151.ff31ea90.js"><link rel="prefetch" href="/assets/js/152.17310db4.js"><link rel="prefetch" href="/assets/js/153.b9d2e594.js"><link rel="prefetch" href="/assets/js/154.e85b8344.js"><link rel="prefetch" href="/assets/js/155.7d11098d.js"><link rel="prefetch" href="/assets/js/156.9a6381c2.js"><link rel="prefetch" href="/assets/js/157.ba1db1ff.js"><link rel="prefetch" href="/assets/js/158.b611c666.js"><link rel="prefetch" href="/assets/js/159.87ac2cdd.js"><link rel="prefetch" href="/assets/js/16.125cfd2e.js"><link rel="prefetch" href="/assets/js/160.959365dd.js"><link rel="prefetch" href="/assets/js/161.32019705.js"><link rel="prefetch" href="/assets/js/162.82310de9.js"><link rel="prefetch" href="/assets/js/163.b5db4751.js"><link rel="prefetch" href="/assets/js/164.3004536f.js"><link rel="prefetch" href="/assets/js/165.c4a3bfd6.js"><link rel="prefetch" href="/assets/js/166.cc3c7606.js"><link rel="prefetch" href="/assets/js/167.0b4cd932.js"><link rel="prefetch" href="/assets/js/168.bf54ea12.js"><link rel="prefetch" href="/assets/js/169.7d653491.js"><link rel="prefetch" href="/assets/js/17.02eb22e7.js"><link rel="prefetch" href="/assets/js/170.40df813d.js"><link rel="prefetch" href="/assets/js/171.3df8569f.js"><link rel="prefetch" href="/assets/js/172.bb2a3d1f.js"><link rel="prefetch" href="/assets/js/173.39d8765e.js"><link rel="prefetch" href="/assets/js/174.9f796629.js"><link rel="prefetch" href="/assets/js/175.bf70f54a.js"><link rel="prefetch" href="/assets/js/176.905f1f93.js"><link rel="prefetch" href="/assets/js/177.8aca775b.js"><link rel="prefetch" href="/assets/js/178.7925ba07.js"><link rel="prefetch" href="/assets/js/179.00f5e9bc.js"><link rel="prefetch" href="/assets/js/18.c96844c0.js"><link rel="prefetch" href="/assets/js/180.8d6ec2ef.js"><link rel="prefetch" href="/assets/js/181.e3ffd78e.js"><link rel="prefetch" href="/assets/js/182.7c543b3c.js"><link rel="prefetch" href="/assets/js/183.f084d59e.js"><link rel="prefetch" href="/assets/js/184.22b90c39.js"><link rel="prefetch" href="/assets/js/185.10309a08.js"><link rel="prefetch" href="/assets/js/186.db265306.js"><link rel="prefetch" href="/assets/js/187.2d8f5957.js"><link rel="prefetch" href="/assets/js/19.46da51f0.js"><link rel="prefetch" href="/assets/js/2.8ff9211c.js"><link rel="prefetch" href="/assets/js/20.342ad0b9.js"><link rel="prefetch" href="/assets/js/21.c1360d39.js"><link rel="prefetch" href="/assets/js/22.255dd63d.js"><link rel="prefetch" href="/assets/js/23.eeddecc8.js"><link rel="prefetch" href="/assets/js/24.8832f059.js"><link rel="prefetch" href="/assets/js/25.ef377f32.js"><link rel="prefetch" href="/assets/js/26.b02b0b8f.js"><link rel="prefetch" href="/assets/js/27.6797a63a.js"><link rel="prefetch" href="/assets/js/28.504b062d.js"><link rel="prefetch" href="/assets/js/29.ee5c94b4.js"><link rel="prefetch" href="/assets/js/30.c43fdec2.js"><link rel="prefetch" href="/assets/js/31.bf5474c5.js"><link rel="prefetch" href="/assets/js/32.d27fb496.js"><link rel="prefetch" href="/assets/js/33.ce3fc0b4.js"><link rel="prefetch" href="/assets/js/34.e73a95e4.js"><link rel="prefetch" href="/assets/js/35.70b5eafd.js"><link rel="prefetch" href="/assets/js/36.51708182.js"><link rel="prefetch" href="/assets/js/37.a4e4e577.js"><link rel="prefetch" href="/assets/js/38.7b21247e.js"><link rel="prefetch" href="/assets/js/39.afa3b017.js"><link rel="prefetch" href="/assets/js/4.ea7c395b.js"><link rel="prefetch" href="/assets/js/40.d0d9a2ec.js"><link rel="prefetch" href="/assets/js/41.3fd77407.js"><link rel="prefetch" href="/assets/js/42.ed3b2608.js"><link rel="prefetch" href="/assets/js/43.76cacd5b.js"><link rel="prefetch" href="/assets/js/44.d183fc8f.js"><link rel="prefetch" href="/assets/js/45.ee35c04d.js"><link rel="prefetch" href="/assets/js/46.70cda30e.js"><link rel="prefetch" href="/assets/js/47.8301ac98.js"><link rel="prefetch" href="/assets/js/48.d37042da.js"><link rel="prefetch" href="/assets/js/49.5673e758.js"><link rel="prefetch" href="/assets/js/5.6a457f2e.js"><link rel="prefetch" href="/assets/js/50.0fb03ecd.js"><link rel="prefetch" href="/assets/js/51.d09bdf73.js"><link rel="prefetch" href="/assets/js/52.135ff04a.js"><link rel="prefetch" href="/assets/js/53.e9653a35.js"><link rel="prefetch" href="/assets/js/54.f1f10121.js"><link rel="prefetch" href="/assets/js/55.77682d7d.js"><link rel="prefetch" href="/assets/js/56.51a79417.js"><link rel="prefetch" href="/assets/js/57.c786b0ec.js"><link rel="prefetch" href="/assets/js/58.d406a779.js"><link rel="prefetch" href="/assets/js/59.4699de91.js"><link rel="prefetch" href="/assets/js/6.d8367d72.js"><link rel="prefetch" href="/assets/js/60.97ba7959.js"><link rel="prefetch" href="/assets/js/61.ee7bc9e9.js"><link rel="prefetch" href="/assets/js/62.7b3d9d3a.js"><link rel="prefetch" href="/assets/js/63.e3f3e081.js"><link rel="prefetch" href="/assets/js/64.167fda24.js"><link rel="prefetch" href="/assets/js/65.fb4ac0a3.js"><link rel="prefetch" href="/assets/js/66.470b7da8.js"><link rel="prefetch" href="/assets/js/67.9aa07704.js"><link rel="prefetch" href="/assets/js/68.36c5f586.js"><link rel="prefetch" href="/assets/js/69.34792d76.js"><link rel="prefetch" href="/assets/js/7.ef0c2a74.js"><link rel="prefetch" href="/assets/js/70.101f31a3.js"><link rel="prefetch" href="/assets/js/71.823cf322.js"><link rel="prefetch" href="/assets/js/72.379e6155.js"><link rel="prefetch" href="/assets/js/73.9db219a2.js"><link rel="prefetch" href="/assets/js/74.d7f73b9b.js"><link rel="prefetch" href="/assets/js/75.c6fb2035.js"><link rel="prefetch" href="/assets/js/76.f8f5ef6e.js"><link rel="prefetch" href="/assets/js/77.a000f06b.js"><link rel="prefetch" href="/assets/js/78.66cae745.js"><link rel="prefetch" href="/assets/js/79.5b3fac25.js"><link rel="prefetch" href="/assets/js/8.40551c40.js"><link rel="prefetch" href="/assets/js/80.a41f83cd.js"><link rel="prefetch" href="/assets/js/81.12ef73a0.js"><link rel="prefetch" href="/assets/js/82.6f8d3d4c.js"><link rel="prefetch" href="/assets/js/83.a96aaf25.js"><link rel="prefetch" href="/assets/js/84.99b5d3ec.js"><link rel="prefetch" href="/assets/js/85.ccc435e3.js"><link rel="prefetch" href="/assets/js/86.475ae098.js"><link rel="prefetch" href="/assets/js/87.c158d554.js"><link rel="prefetch" href="/assets/js/88.fea31b7a.js"><link rel="prefetch" href="/assets/js/89.e76f8214.js"><link rel="prefetch" href="/assets/js/9.024288bf.js"><link rel="prefetch" href="/assets/js/90.2b5b7232.js"><link rel="prefetch" href="/assets/js/91.b708aec2.js"><link rel="prefetch" href="/assets/js/92.d54bb327.js"><link rel="prefetch" href="/assets/js/93.d5138993.js"><link rel="prefetch" href="/assets/js/94.5ba452b7.js"><link rel="prefetch" href="/assets/js/95.92b06fb4.js"><link rel="prefetch" href="/assets/js/96.95d2df8f.js"><link rel="prefetch" href="/assets/js/97.ab585b9e.js"><link rel="prefetch" href="/assets/js/98.ceefa271.js"><link rel="prefetch" href="/assets/js/99.0033c6db.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.d4ec1362.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="xukeler的博客" class="logo"> <span class="site-name can-hide">xukeler的博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="web开发" class="dropdown-title"><span class="title">web开发</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/web/vue/Vue原理解析-虚拟Dom.html" class="nav-link">
+  Vue2.0
+</a></li><li class="dropdown-item"><!----> <a href="/blog/web/vue3/pinia.html" class="nav-link">
+  Vue3.0
+</a></li><li class="dropdown-item"><!----> <a href="/blog/web/react/react.html" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/blog/web/Es6/es6.html" class="nav-link">
+  Es6
+</a></li><li class="dropdown-item"><!----> <a href="/blog/web/optimize/vue数据优化-Object.freeze.html" class="nav-link">
+  性能优化
+</a></li><li class="dropdown-item"><!----> <a href="/blog/web/plugin/anime-js动画库.html" class="nav-link">
+  常用插件
+</a></li><li class="dropdown-item"><!----> <a href="/blog/web/javascript/iframe跨域通信.html" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-item"><!----> <a href="/blog/web/typescript/typeScript.html" class="nav-link">
+  Typescript
+</a></li><li class="dropdown-item"><!----> <a href="/blog/web/css/Sass.html" class="nav-link">
+  Css
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="客户端开发" class="dropdown-title"><span class="title">客户端开发</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/client/electron/electron-vue.html" class="nav-link">
+  Electron
+</a></li><li class="dropdown-item"><!----> <a href="/blog/client/harmony/harmony.html" class="nav-link">
+  harmonyOS鸿蒙
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="小程序开发" class="dropdown-title"><span class="title">小程序开发</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/small/wechat/微信小程序.html" class="nav-link">
+  微信小程序
+</a></li><li class="dropdown-item"><!----> <a href="/blog/small/uni-app/强制更新.html" class="nav-link">
+  uni-app
+</a></li><li class="dropdown-item"><!----> <a href="/blog/small/cloudpay/cloudpay.html" class="nav-link">
+  云闪付小程序
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/web/problem/移动端弹窗滚动穿透.html" class="nav-link">
+  常用功能及踩坑
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端开发" class="dropdown-title"><span class="title">后端开发</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/server/node/koa2.html" class="nav-link">
+  node.js
+</a></li><li class="dropdown-item"><!----> <a href="/blog/server/database/MongoDB.html" class="nav-link">
+  数据库
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/other/去除windows桌面快捷方式icon.html" class="nav-link">
+  其它
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="web开发" class="dropdown-title"><span class="title">web开发</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/web/vue/Vue原理解析-虚拟Dom.html" class="nav-link">
+  Vue2.0
+</a></li><li class="dropdown-item"><!----> <a href="/blog/web/vue3/pinia.html" class="nav-link">
+  Vue3.0
+</a></li><li class="dropdown-item"><!----> <a href="/blog/web/react/react.html" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/blog/web/Es6/es6.html" class="nav-link">
+  Es6
+</a></li><li class="dropdown-item"><!----> <a href="/blog/web/optimize/vue数据优化-Object.freeze.html" class="nav-link">
+  性能优化
+</a></li><li class="dropdown-item"><!----> <a href="/blog/web/plugin/anime-js动画库.html" class="nav-link">
+  常用插件
+</a></li><li class="dropdown-item"><!----> <a href="/blog/web/javascript/iframe跨域通信.html" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-item"><!----> <a href="/blog/web/typescript/typeScript.html" class="nav-link">
+  Typescript
+</a></li><li class="dropdown-item"><!----> <a href="/blog/web/css/Sass.html" class="nav-link">
+  Css
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="客户端开发" class="dropdown-title"><span class="title">客户端开发</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/client/electron/electron-vue.html" class="nav-link">
+  Electron
+</a></li><li class="dropdown-item"><!----> <a href="/blog/client/harmony/harmony.html" class="nav-link">
+  harmonyOS鸿蒙
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="小程序开发" class="dropdown-title"><span class="title">小程序开发</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/small/wechat/微信小程序.html" class="nav-link">
+  微信小程序
+</a></li><li class="dropdown-item"><!----> <a href="/blog/small/uni-app/强制更新.html" class="nav-link">
+  uni-app
+</a></li><li class="dropdown-item"><!----> <a href="/blog/small/cloudpay/cloudpay.html" class="nav-link">
+  云闪付小程序
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/web/problem/移动端弹窗滚动穿透.html" class="nav-link">
+  常用功能及踩坑
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端开发" class="dropdown-title"><span class="title">后端开发</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/server/node/koa2.html" class="nav-link">
+  node.js
+</a></li><li class="dropdown-item"><!----> <a href="/blog/server/database/MongoDB.html" class="nav-link">
+  数据库
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/other/去除windows桌面快捷方式icon.html" class="nav-link">
+  其它
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>常用功能踩坑</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/web/problem/移动端弹窗滚动穿透.html" class="sidebar-link">移动端弹窗滚动穿透</a></li><li><a href="/blog/web/problem/并发请求.html" class="sidebar-link">并发请求</a></li><li><a href="/blog/web/problem/h5-ios端输入框自动获取焦点.html" class="sidebar-link">h5-ios端输入框自动获取焦点</a></li><li><a href="/blog/web/problem/ios15-safari浏览器兼容.html" class="sidebar-link">ios15-safari浏览器兼容</a></li><li><a href="/blog/web/problem/获取跳转来源.html" class="sidebar-link">获取跳转来源</a></li><li><a href="/blog/web/problem/h5弹出键盘换行改成搜索.html" class="sidebar-link">h5弹出键盘换行改成搜索</a></li><li><a href="/blog/web/problem/ios设置input-disabled状态无效.html" class="sidebar-link">ios设置input-disabled状态无效</a></li><li><a href="/blog/web/problem/手机访问web host服务.html" class="sidebar-link">手机访问web host服务</a></li><li><a href="/blog/web/problem/安卓微信浏览器打开调试.html" class="sidebar-link">安卓微信浏览器打开调试</a></li><li><a href="/blog/web/problem/web屏幕录制.html" class="sidebar-link">web屏幕录制</a></li><li><a href="/blog/web/problem/直播推流和聊天室.html" class="sidebar-link">直播推流和聊天室</a></li><li><a href="/blog/web/problem/前端录音下载.html" class="sidebar-link">前端录音下载</a></li><li><a href="/blog/web/problem/h5实现手势操作放大缩小拖动.html" class="sidebar-link">h5实现手势操作放大缩小拖动</a></li><li><a href="/blog/web/problem/h5-video不能自动播放.html" class="sidebar-link">h5-video不能自动播放</a></li><li><a href="/blog/web/problem/微信h5移除前进后退导航条.html" class="sidebar-link">微信h5移除前进后退导航条</a></li><li><a href="/blog/web/problem/移动端rem适配.html" class="sidebar-link">移动端rem适配</a></li><li><a href="/blog/web/problem/h5调试查看log.html" class="sidebar-link">h5调试查看log</a></li><li><a href="/blog/web/problem/moke数据开发.html" class="sidebar-link">moke数据开发</a></li><li><a href="/blog/web/problem/设备判断.html" class="sidebar-link">设备判断</a></li><li><a href="/blog/web/problem/获取汉字拼音首字母.html" class="sidebar-link">获取汉字拼音首字母</a></li><li><a href="/blog/web/problem/常用工具类方法总结.html" class="sidebar-link">常用工具类方法总结</a></li><li><a href="/blog/web/problem/常用web-api.html" class="sidebar-link">常用web-api</a></li><li><a href="/blog/web/problem/JQuery常用方法总结.html" class="active sidebar-link">JQuery常用方法总结</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/blog/web/problem/文件下载.html" class="sidebar-link">文件下载</a></li><li><a href="/blog/web/problem/点击空白处让指定元素隐藏.html" class="sidebar-link">点击空白处让指定元素隐藏</a></li><li><a href="/blog/web/problem/图片上传预览.html" class="sidebar-link">图片上传预览</a></li><li><a href="/blog/web/problem/瀑布流.html" class="sidebar-link">瀑布流</a></li><li><a href="/blog/web/problem/拖放Dom元素.html" class="sidebar-link">拖放Dom元素</a></li><li><a href="/blog/web/problem/Drag-Drop.html" class="sidebar-link">Drag-Drop</a></li><li><a href="/blog/web/problem/vsCode窗口设置.html" class="sidebar-link">vsCode窗口设置</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="jquery常用方法总结"><a href="#jquery常用方法总结" class="header-anchor">#</a> JQuery常用方法总结</h3> <h4 id="_1-什么是jquery"><a href="#_1-什么是jquery" class="header-anchor">#</a> 1.什么是JQuery</h4> <p>jQuery就是javascript的一个库，把我们常用的一些功能进行了封装，方便我们来调用，提高我们的开发效率。</p> <h4 id="_2-jquery-库中的-符号是什么？"><a href="#_2-jquery-库中的-符号是什么？" class="header-anchor">#</a> 2.jQuery 库中的 $符号是什么？</h4> <p>$符号是一个对象，代表JQuery对象。</p> <h4 id="_3-jquery有几种选择器"><a href="#_3-jquery有几种选择器" class="header-anchor">#</a> 3.JQuery有几种选择器</h4> <ul><li><p>基本选择器。
+$(“.intro”) 选取所有 class=“intro” 的</p><p> 元素。</p> <p>$(“#dem”) 选取所有 id=&quot;demo&quot; 的 </p><p> 元素。</p></li> <li><p>属性选择器。
+$(&quot;[href]&quot;) 选取所有带有 href 属性的元素。</p> <p>$(&quot;[href='#']&quot;) 选取所有带有 href 值等于 &quot;#&quot; 的元素。</p></li> <li><p>层级选择器。
+$(&quot; div &gt;input&quot;)选择div下的所有input。</p></li> <li><p>过滤选择器。
+$(&quot;.main li:odd&quot;)匹配所有索引值为奇数的元素。</p></li> <li><p>表单选择器。
+$(&quot; #main :input&quot;)匹配#main下的所有input。</p></li></ul> <h4 id="_4-document-ready-是个什么函数？"><a href="#_4-document-ready-是个什么函数？" class="header-anchor">#</a> 4.$(document).ready() 是个什么函数？</h4> <p>ready() 函数用于在文档进入ready状态时执行代码。当DOM 完全加载，开始执行JS，好处是使用所有浏览器。</p> <h4 id="_5-window-onload-事件和-jquery-ready-函数有何不同？"><a href="#_5-window-onload-事件和-jquery-ready-函数有何不同？" class="header-anchor">#</a> 5.window.onload 事件和 jQuery ready 函数有何不同？</h4> <p>window.onload事件需要等待DOM完全加载以及静态资源图片css样式完全加载才会执行js。
+jQuery ready() 函数当DOM加载完成就开始执行，不等待静态资源的加载。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>$(document).ready(function(){
+.......
+})
+window.onload=function(){
+.......
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h4 id="_6-jquery对象和原生js互转。"><a href="#_6-jquery对象和原生js互转。" class="header-anchor">#</a> 6.JQuery对象和原生js互转。</h4> <p>原生js转换JQuery将DOM包含在$()里面就可以。</p> <p>JQuery转换原生js对象$(''&quot;').get(0).</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>$(dom)
+$(&quot;.name&quot;).get(0)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h4 id="_7-jquery中attr和prop的区别"><a href="#_7-jquery中attr和prop的区别" class="header-anchor">#</a> 7.JQuery中attr和prop的区别</h4> <p>对于HTML元素本身就带有的固有属性，在处理时，使用prop方法。
+对于HTML元素我们自己自定义的DOM属性，在处理时，使用attr方法。</p> <h4 id="_8-jquery基本选择器"><a href="#_8-jquery基本选择器" class="header-anchor">#</a> 8.JQuery基本选择器</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code> $('.list li:first').css('color','red');//选择li的第一个元素。
+$('.list li:last').css('color','blue');//选择li元素组合最后一个。
+$('.list li:even').css('fontSize','28px');//选择li的奇数元素。
+ $('.list li:odd').css('fontSize','12px');//选择li的偶数元素。
+$('.list li').eq(1).css('color','pink');//选择li中索引为1的元素，索引从0开始。
+$('.list li:gt(1)').css('fontWeight','700');//选择li元素组合中索引值大于1的元素。
+$('.list li:lt(1)').css('fontWeight','700');//匹配所有小于给定索引值的元素。
+$(&quot;:header&quot;).css(&quot;backgroundColor&quot;,'green')//选择所有的标题元素h1-h6。
+$(&quot;:root&quot;).css(&quot;background-color&quot;,&quot;#ccc&quot;);//选择该文档的根元素（永远都是html标签）。
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h4 id="_9-jquery内容选择器"><a href="#_9-jquery内容选择器" class="header-anchor">#</a> 9.jQuery内容选择器</h4> <ul><li>：contains（“给定文字内容”），匹配标签内包含给定文本的元素。</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code> &lt;ul class=&quot;list&quot;&gt;
+            &lt;li&gt;1&lt;/li&gt;
+            &lt;li&gt;2&lt;/li&gt;
+            &lt;li&gt;3&lt;/li&gt;
+            &lt;li&gt;4&lt;/li&gt;
+            &lt;li&gt;5&lt;/li&gt;
+        &lt;/ul&gt;
+$(&quot;.list li:contains('3')&quot;)//选择li标签内容是3的元素。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><ul><li>：empty匹配所有不包含子元素或者文本的空元素</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;li&gt;&lt;/li&gt;
+$(&quot;li:empty&quot;)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h4 id="_10-属性选择器"><a href="#_10-属性选择器" class="header-anchor">#</a> 10.属性选择器</h4> <p>属性选择器有等于<code>=</code>,不等于<code>！=</code>，<code>^=</code>以给定字符串开始的，<code>$=</code>以给定字符串结尾的，<code>*=</code>包含给定字符串的，</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>$(&quot;.list li[class='der']&quot;).css(&quot;color&quot;,'yellow')//选择class等于der的li。
+$(&quot;.list li[class!='der']&quot;).css(&quot;color&quot;,'yellow')
+$(&quot;.list li[class^='der']&quot;).css(&quot;color&quot;,'yellow')
+$(&quot;.list li[class$='der']&quot;).css(&quot;color&quot;,'yellow')
+$(&quot;.list li[class*='der']&quot;).css(&quot;color&quot;,'yellow')
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h4 id="_11-表单选择器"><a href="#_11-表单选择器" class="header-anchor">#</a> 11.表单选择器</h4> <p>表单选择器选择所有的input和type值为<code>text ,password,file,button,checkbox,radio</code>等。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>$(&quot;.list :text&quot;).css(&quot;border&quot;,'none')//选择type等于text元素。
+$(&quot;.list :input&quot;).css(&quot;border&quot;,'none')//选择list下所有的input。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>表单常用属性<code>:enabled，：disabled，：checked，：selecked</code></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>$(':disabled').css(&quot;border&quot;,&quot;none&quot;)//选择所有被禁用的元素。
+$(':checked').css(&quot;border&quot;,&quot;none&quot;)//选择所有选中的元素（单选框，复选框，下拉框）。
+$(':selecked').css(&quot;border&quot;,&quot;none&quot;)//选择select下拉框中所有选中的option元素。
+$(':enabled').css(&quot;border&quot;,&quot;none&quot;)//选择所有没有没禁用的元素。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h4 id="_12-jquery节点操作"><a href="#_12-jquery节点操作" class="header-anchor">#</a> 12.JQuery节点操作</h4> <p><strong>1. 创建标签</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>$(&quot;&lt;a href=''&gt;&lt;/a&gt;&quot;)//括号里是标签，可以填写标签属性。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><strong>2.内部插入父子级别插入</strong></p> <ul><li>末尾插入标签<code>append()</code></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>var res=$(&quot;&lt;a href=''&gt;&lt;/a&gt;&quot;)
+res.html('ddd')
+$('.main').append(res)//末尾插入
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li>插入到<code>appendTo</code></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>$('.main').appendTo($('.list'))//将main插入到list里面。list不能为main的子元素。同级可以插入，
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>开头插入标签<code>prepend</code></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>var res=$(&quot;&lt;a href=''&gt;&lt;/a&gt;&quot;)
+res.html('ddd')
+$('.main').prepend(res)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li>把所有匹配的元素前置到另一个、指定的元素元素集合中<code>prependTo</code>。</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>$(&quot;p&quot;).prependTo(&quot;#foo&quot;);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><strong>3.外部插入是同级元素的插入</strong></p> <ul><li><code>after</code>后面插入和<code>insertBefore</code>效果一样，<code>before</code>前面插入和<code>insertArter</code>效果一样。</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>var res=$(&quot;&lt;a&gt;123&lt;/a&gt;&quot;)
+$(&quot;p&quot;).after(res)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p><strong>4.节点的替换</strong></p> <ul><li>replaceWith（content/fun）参数可以是字符内容，也可以是函数(函数返回值必须是字符串。)。将匹配的节点替换成指定的元素。前面的替换成后面的。</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>$('input:disabled').replaceWith('4444');
+$('input:disabled').replaceWith(&quot;&lt;a&gt;ggggg&lt;/a&gt;&quot;)
+$('.main').replaceWith(function(){
+    return &quot;&lt;i&gt;ffff&lt;/i&gt;&quot;
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><ul><li>replaceAll（param）只有一个参数被替换的元素，后面的替换成前面的。</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>$('&lt;a&gt;ggggg&lt;/a&gt;').replaceAll($('.main'))
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><strong>5.节点删除</strong></p> <ul><li>empty（）删除匹配的元素集合中所有的子节点。</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>$('.main').empty();//删除main中所有的子节点。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>remove（param），detach（param）只有一个参数是需要匹配带有指定类名和id名的字符串，可以不传，删除所有匹配到的元素。remove和detach功能一样，区别是remove会移除绑定的事件，detach不会。</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>$('input').remove();//删除所有的input。
+$('input').remove('#ddd');//删除所有id为ddd的input
+$('input').detach();//删除所有的input。
+$('input').detach('#ddd');//删除所有id为ddd的input
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p><strong>6.节点克隆</strong></p> <ul><li>clone（param）一个参数为布尔值，true绑定的事件也会克隆，false不会，默认false。</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>var res=$(&quot;div&quot;).clone(true);
+$('.main').after(res)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h4 id="_13-事件的绑定和解绑"><a href="#_13-事件的绑定和解绑" class="header-anchor">#</a> 13.事件的绑定和解绑</h4> <ul><li>绑定事件通过on绑定事件，有两个参数，第一个参数是事件名，第二个参数是回调函数。</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>$(&quot;.main&quot;).on('click',function(){
+
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li>移除事件off() 方法移除用on()绑定的事件处理程序。还可以使用unbind（JQuery3.0移除）；
+不加事件名，默认移除所有绑定的事件。</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>$(&quot;p&quot;).off()
+$(&quot;p&quot;).unbind()
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h4 id="_14-jquery网络请求"><a href="#_14-jquery网络请求" class="header-anchor">#</a> 14.JQuery网络请求</h4> <p>jQuery发请求可以使用<code>$.get()</code>,<code>$.post()</code>, <code>$.ajax()(功能最齐全完善)</code>。一般使用的都是$.ajax()。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>$.ajax({  
+              timeout：3000，//请求延迟时间。
+              async：true，//默认为true异步请求true为同步。
+             type: &quot;POST&quot;,  //规定哪种请求方式
+             url: &quot;/login&quot;,  //请求路径
+             contentType: 'application/x-www-form-urlencoded;charset=utf-8',  //请求头
+             data: {username:$(&quot;#username&quot;).val(), password:$(&quot;#password&quot;).val()},  //参数
+             dataType: &quot;json&quot;,  //传输的数据类型
+             success: function(data){  //请求成功的回调
+                         console.log(data);  
+                      }，  
+             error:function(e){  //请求失败的回调
+                         console.log(e);  
+             },
+          statusCode: {404: function() {//响应的状态码回调
+            alert('page not found');
+                }  
+         });  
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><h4 id="_15-查找元素"><a href="#_15-查找元素" class="header-anchor">#</a> 15.查找元素</h4> <ul><li>查找父元素parent（）取得一个包含着所有匹配元素的唯一父元素的元素集合。返回的数据包含子元素。</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>$(&quot;p&quot;).parent()
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>查找所有的父元素parents（），取得一个包含着所有匹配元素的祖先元素的元素集合（不包含子元素）</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>$(&quot;span&quot;).parents(&quot;p&quot;)//查找父元素集合中所有p的元素集合
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>查找子元素children（）</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>$(&quot;div&quot;).children()
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>查找当前元素相邻的后面同级元素集合next（）一个</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>$(&quot;p&quot;).next()
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>查找当前元素相邻的后面同级元素集合nextAll（）后面所有同级元素</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>$(&quot;p&quot;).nextAll()
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>查找当前元素相邻的前面同级元素集合prev（）前面一个同级元素</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>$(&quot;p&quot;).prev()
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>查找当前元素相邻的前面同级元素集合prevAll（）前面所有同级元素</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>$(&quot;p&quot;).prevAll()
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>查找指定元素find（）搜索所有与指定表达式匹配的元素.</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>$(&quot;p&quot;).find(&quot;span&quot;)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/web/problem/常用web-api.html" class="prev">
+        常用web-api
+      </a></span> <span class="next"><a href="/blog/web/problem/文件下载.html">
+        文件下载
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><div></div></div></div>
+    <script src="/assets/js/app.a2596c5f.js" defer></script><script src="/assets/js/3.0979b334.js" defer></script><script src="/assets/js/111.cef1e5a3.js" defer></script>
+  </body>
+</html>

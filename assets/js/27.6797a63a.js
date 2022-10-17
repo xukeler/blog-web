@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[27],{443:function(n,t,e){"use strict";e.r(t);var a={data:function(){return{name:"小明"}}},i=e(31),s=Object(i.a)(a,(function(){var n=this.$createElement;return(this._self._c||n)("div",[this._t("der",[this._v("今天天气很棒")],{na:this.name})],2)}),[],!1,null,null,null);t.default=s.exports}}]);
